@@ -1,21 +1,25 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+#include<math.h> 
+
+int main() 
 {
-	int i,n,fc=0;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++)
-	{
-		if(n%i==0)
-		{
-			fc++;
-		}
-	}
-	if(fc==2)
-	{
-		printf("prime");
-	}
-	else
-	{
-		printf("not a prime");
-	}
+    int num;    //Declare the number
+    scanf("%d",&num);    //Initialize the nummber
+    int count=0;
+    for(int i=2;i<=sqrt(num);i++)   //Iterate from 2 to sqrt(num)
+    {
+        if(num%i==0)
+        {
+            count++;
+            break;
+        }
+    }
+    if(count!=0)     //Check whether prime or not
+    {
+        printf("not a prime");
+    }
+    else
+    {
+        printf("prime");
+    }
 }
