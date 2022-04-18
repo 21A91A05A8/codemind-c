@@ -1,20 +1,16 @@
-#include <stdio.h>
-#include <math.h>
- 
+#include<stdio.h>
 int main()
 {
-    int num;
-    int iVar;
-    float fVar;
-    scanf("%d",&num);
-  
-    fVar=sqrt((double)num);
-    iVar=fVar;
- 
-    if(iVar==fVar)
-        printf("True");
-    else
-        printf("False");
-      
+    int i, number;
+    scanf("%d", &number);
+    for(i = 0; i <= number; i++)
+    {
+        if(number == i*i)
+        {
+            printf("True");
+            return 0;  
+        }
+    }
+    printf("False");
     return 0;
 }
