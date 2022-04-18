@@ -3,7 +3,7 @@ int main()
 {    
     int num;
     int sum = 0, rem;
-    scanf("%d", &num);   
+    scanf("%ld", &num);   
 
     while(num / 10 != 0)
     {
