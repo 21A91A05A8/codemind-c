@@ -1,22 +1,25 @@
 #include <stdio.h>
-
-int main() {
+int main() 
+{
    int low, high, i, flag;
    scanf("%d %d", &low, &high);
    // iteration until low is not equal to high
-   while (low < high) {
+   while (low < high) 
+   {
       flag = 0;
-
       // ignore numbers less than 2
-      if (low <= 1) {
+      if (low <= 1)
+      {
          ++low;
          continue;
       }
 
       // if low is a non-prime number, flag will be 1
-      for (i = 2; i <= low / 2; ++i) {
+      for (i = 2; i <= low / 2; ++i) 
+      {
 
-         if (low % i == 0) {
+         if (low % i == 0) 
+         {
             flag = 1;
             break;
          }
@@ -25,13 +28,9 @@ int main() {
       if (flag == 0)
          printf("%d
 ", low);
-         
 
-      // to check prime for the next number
-      // increase low by 1
       ++low;
-    
    }
-    
+
    return 0;
 }
