@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,rev=0,d,k;
+    int n,d,k,rev=0;
     scanf("%d",&n);
     k=n;
-    while(n!=0)
+    while(n>0)
     {
         d=n%10;
         rev=(rev*10)+d;
