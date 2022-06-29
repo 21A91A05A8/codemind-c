@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int arr[100],n,i,sum=0;
+    int arr[100],i,n,sum1=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -11,8 +11,12 @@ int main()
     {
         if(arr[i]%2==0)
         {
-            sum+=arr[i];
+            sum1+=arr[i];
+        }
+        else
+        {
+            continue;
         }
     }
-    printf("%d ",sum);
+    printf("%d",sum1);
 }
