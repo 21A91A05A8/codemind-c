@@ -5,7 +5,7 @@
 int main()
 {
   int n, arr[MAX_N];
-  int skip[MAX_N]; // this is used for skipping already visited numbers
+  int skip[MAX_N]; 
 
   int sum = 0;
   int items = 0;
